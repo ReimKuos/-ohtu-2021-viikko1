@@ -1,7 +1,7 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         self.tilavuus = max(tilavuus, 0.0)
-        self.saldo = max(0.0, min(tilavuus, alku_saldo))
+        self.saldo = max(0.0, min(tilavuus, alku_saldo)) 
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
